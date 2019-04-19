@@ -4,7 +4,7 @@ import com.stringtechinc.base.AbstractBaseBatch;
 
 public class Get extends AbstractBaseBatch {
 
-	private final static String SHORI_NAME = "order.get";
+	private final static String NAME = "order.get";
 
 	/**
 	 * main
@@ -12,7 +12,7 @@ public class Get extends AbstractBaseBatch {
 	 */
 	public static void main(String[] args) {
 		Get order = new Get();
-		int code = order.doProcess(Get.class, SHORI_NAME);
+		int code = order.doProcess(Get.class, NAME);
 		System.exit(code);
 
 	}

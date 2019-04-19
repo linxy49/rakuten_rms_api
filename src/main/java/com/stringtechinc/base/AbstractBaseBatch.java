@@ -55,7 +55,7 @@ public abstract class AbstractBaseBatch implements IBaseBatch {
 	/**
 	 * preExecute
 	 * @param classObj
-	 * @param shoriName
+	 * @param name
 	 */
 	private void preExecute(Class<?> classObj) {
 		getLogger(classObj);
@@ -67,7 +67,7 @@ public abstract class AbstractBaseBatch implements IBaseBatch {
 	 * doProcess
 	 * @return
 	 */
-	public int doProcess(Class<?> classObj, String shoriName) {
+	public int doProcess(Class<?> classObj, String name) {
 		preExecute(classObj);
 		if (logger == null || properties == null) {
 			return Constants.FAILURE_CODE;
@@ -80,7 +80,7 @@ public abstract class AbstractBaseBatch implements IBaseBatch {
 
 	/**
 	 * postExecute
-	 * @param shoriName
+	 * @param name
 	 */
 	private void postExecute() {
 	}

@@ -8,4 +8,4 @@ log/
 target/
 
 # Rms
-conf/rms_dev.properties
+conf/rms.properties
